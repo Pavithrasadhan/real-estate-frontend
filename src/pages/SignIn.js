@@ -91,6 +91,9 @@ function SignIn() {
         <Link to="/signup" className="signup-button">
           Sign Up
         </Link>
+        <Link to="/" className="goback-button">
+          Go Back
+        </Link>
       </div>
     </div>
   );

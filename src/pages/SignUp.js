@@ -169,6 +169,10 @@ function SignUp() {
           >
             Login
           </Link>
+
+          <Link to="/" className="goback-button">
+                    Go Back
+                  </Link>
         </div>
         
       </div>
