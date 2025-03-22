@@ -223,9 +223,7 @@ const AddProperties = () => {
   formData.append('base_price', base_price);
   formData.append('status', status);
 
-  selectedAmenities.forEach((amenity) => {
-    formData.append('amenities[]', amenity);
-  });
+  formData.append('amenities', JSON.stringify(selectedAmenities));
 
   image.forEach(file => {
     formData.append('image', file);
