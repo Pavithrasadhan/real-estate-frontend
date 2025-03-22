@@ -41,7 +41,7 @@ const EditProperties = () => {
     try {
       const response = await axios.get(`${backendUrl}/api/properties/${id}`);
       setProperties(response.data);
-      setSelectedAmenities(response.data.amenities);
+      setSelectedAmenities(response.data.amenities || []);
     } catch (error) {
       console.log("Error fetching properties:", error);
     }
