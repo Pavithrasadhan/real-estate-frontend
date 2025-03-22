@@ -231,6 +231,10 @@ const AddProperties = () => {
     formData.append('image', file);
   });
 
+  if (QRcode) {
+    formData.append('QRcode', QRcode);
+  }
+
   axios.post(`${backendUrl}/api/properties`, formData, {
     headers: {
       'Content-Type': 'multipart/form-data',
