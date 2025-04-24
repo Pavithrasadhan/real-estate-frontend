@@ -503,7 +503,7 @@ const EditProperties = () => {
       <div key={index} style={{ position: 'relative', display: 'inline-block' }}>
         {img && (typeof img === 'string' || img instanceof String) ? (
           <img
-            src={`${backendUrl}/upload/${img.replace(/\\/g, '/')}`}
+            src={`${backendUrl}/uploads/${img.replace(/\\/g, '/')}`}
             alt={`Property ${index + 1}`}
             style={{ width: '100px', height: '100px', margin: '10px', display: 'block' }}
           />
