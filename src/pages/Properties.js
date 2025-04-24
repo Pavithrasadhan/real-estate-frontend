@@ -132,7 +132,7 @@ const Properties = () => {
                 <td>
                   {Array.isArray(p.image) && p.image.length > 0 ? (
                     <img
-                      src={`${backendUrl}/${p.image[0].replace(/\\/g, '/')}`}
+                      src={`${backendUrl}/upload/${p.image[0].replace(/\\/g, '/')}`}
                       style={{ width: '100px', height: '100px', objectFit: 'cover' }}
                       alt="property"
                     />
