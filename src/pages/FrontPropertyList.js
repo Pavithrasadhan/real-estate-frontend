@@ -125,7 +125,7 @@ const FrontProperties = () => {
                                                 {property.image && property.image.length > 0 ? (
                                                     <div className="text-center">
                                                         <img
-                                                            src={`${backendUrl}/uploads/${property.image[0].replace(/\\/g, '/')}`}
+                                                            src={`${backendUrl}/${property.image[0].replace(/\\/g, '/')}`}
                                                             alt="Property"
                                                             className="img-fluid rounded mb-3"
                                                             style={{ maxHeight: "200px", objectFit: "cover" }}
