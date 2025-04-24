@@ -132,7 +132,7 @@ const Properties = () => {
                 <td>
                   {Array.isArray(p.image) && p.image.length > 0 ? (
                     <img
-                      src={'https://real-estate-backend-r07w.onrender.com/uploads/${p.image[0].replace(/\\/g, '/')}'}
+                      src={`${backendUrl}/${p.image[0].replace(/\\/g, '/')}`}
                       style={{ width: '100px', height: '100px', objectFit: 'cover' }}
                       alt="property"
                     />
